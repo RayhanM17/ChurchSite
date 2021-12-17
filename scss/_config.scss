@@ -1,0 +1,32 @@
+$primaryColor:#49326b;
+$secondaryColor:#bc9c22;
+$light:#fff;
+$gray:#e3e6e0;
+
+$theme-colors: (
+  "primary": $primaryColor,
+  "secondary": $secondaryColor,
+  "light": $light,
+);
+
+// Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 576px){
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 768px){
+    @content;
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 992px) and (max-width: 1199px){
+    @content;
+  }
+}
+@mixin mediaXl {
+  @media screen and (min-width: 1200px){
+    @content;
+  }
+}

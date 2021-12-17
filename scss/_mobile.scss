@@ -1,0 +1,20 @@
+// wide screens
+
+@include mediaXl{
+  .nav-mobile{
+    display: none;
+  }
+}
+@include mediaLg{
+  .nav-mobile{
+    display: none;
+  }
+}
+@include mediaMd{
+  .nav-desk{
+    display: none;
+  }
+}
+@include mediaSm{
+  
+}
