@@ -14,11 +14,11 @@ body{
   height: 100%;
 }
 
-// body::before {
-//   display:block;
-//   content: '';
-//   height: 126px;
-// }
+body::before {
+  display:block;
+  content: '';
+  height: 126px;
+}
 
 // Nav
 
@@ -26,11 +26,11 @@ body{
 }
 
 // Showcase
-.showcase{
-  //background: url('../img/demoshowcase.jpg');
-  background-attachment: scroll;
+.bg-img{
+  background: url(../img/demoshowcase.jpg);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 //Social medias

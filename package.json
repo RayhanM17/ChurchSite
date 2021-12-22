@@ -1,0 +1,9 @@
+{
+  "homepage":"https://rayhanM17.github.io/SalaEvangelicaMiami",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}

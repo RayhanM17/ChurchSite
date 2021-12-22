@@ -11,7 +11,7 @@ var map = new mapboxgl.Map({
 // Modal
 
 var modalWrap = null;
-function showModal() {
+function showModal(verses) {
   if(modalWrap !== null){
     modalWrap.remove();
   }
@@ -22,13 +22,14 @@ function showModal() {
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="versesModalLabel">Default title</h5>
+            <h5 class="modal-title" id="versesModalLabel">${verses.heading}</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="list-group">
               <div class="list-group-item">
-                ...
+                <h4>${verses.verse1Name}</h4>
+                <p>${verses.verse1Content}</p>
               </div>
             </div>
           </div>
@@ -51,26 +52,56 @@ var cards = document.querySelectorAll('.card');
 cards.forEach(card => {card.addEventListener('click', e => {
 
   if(e.target.parentElement.classList.contains('v-love') || e.target.parentElement.parentElement.classList.contains('v-love') || e.target.parentElement.parentElement.parentElement.classList.contains('v-love')){
-    showModal();
+    const verses = {
+      heading: 'Verses About Love',
+      verse1Name: 'John 3:16 ESV',
+      verse1Content: '“For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.',
+    }
+    showModal(verses);
   }
 
   if(e.target.parentElement.classList.contains('v-peace') || e.target.parentElement.parentElement.classList.contains('v-peace') || e.target.parentElement.parentElement.parentElement.classList.contains('v-peace')){
-    showModal();
+    const verses = {
+      heading: 'Verses About Peace',
+      verse1Name: 'John 3:16 ESV',
+      verse1Content: '“For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.',
+    }
+    showModal(verses);
   }
 
   if(e.target.parentElement.classList.contains('v-grace') || e.target.parentElement.parentElement.classList.contains('v-grace') || e.target.parentElement.parentElement.parentElement.classList.contains('v-grace')){
-    showModal();
+    const verses = {
+      heading: 'Verses About Grace',
+      verse1Name: 'John 3:16 ESV',
+      verse1Content: '“For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.',
+    }
+    showModal(verses);
   }
 
   if(e.target.parentElement.classList.contains('v-prom') || e.target.parentElement.parentElement.classList.contains('v-prom') || e.target.parentElement.parentElement.parentElement.classList.contains('v-prom')){
-    showModal();
+    const verses = {
+      heading: 'Verses About Promises',
+      verse1Name: 'John 3:16 ESV',
+      verse1Content: '“For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.',
+    }
+    showModal(verses);
   }
 
   if(e.target.parentElement.classList.contains('v-heal') || e.target.parentElement.parentElement.classList.contains('v-heal') || e.target.parentElement.parentElement.parentElement.classList.contains('v-heal')){
-    showModal();
+    const verses = {
+      heading: 'Verses About Healing',
+      verse1Name: 'John 3:16 ESV',
+      verse1Content: '“For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.',
+    }
+    showModal(verses);
   }
 
   if(e.target.parentElement.classList.contains('v-hope') || e.target.parentElement.parentElement.classList.contains('v-hope') || e.target.parentElement.parentElement.parentElement.classList.contains('v-hope')){
-    showModal();
+    const verses = {
+      heading: 'Verses About Hope',
+      verse1Name: 'John 3:16 ESV',
+      verse1Content: '“For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.',
+    }
+    showModal(verses);
   }
 })});
