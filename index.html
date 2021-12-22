@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <div class="container-xxl">
+      <a href="#showcase" class="navbar-brand">
+        <img class="img-fluid" src="./img/SEMLogo-sm.png" alt="Logo">
+      </a>
+      <!-- toggle btn mobile nav-->
+      <button class="navbar-toggler" type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#main-nav"
+      aria-controls="main-nav"
+      aria-expanded="false"
+      arial-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- navbar links-->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="main-nav">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body justify-content-end align-center" id="main-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a href="#verses" class="nav-link">Verses</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <a href="#verses" class="btn btn-secondary">Verses</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Showcase -->
+  <section class="showcase bg-dark text-light p-5 text-center text-md-start bg-img img-fluid" id="showcase">
+    <div class="container ">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div>
+          <h1>Welcome To <span class="text-truncate">Sala Evangelica Miami</span></h1>
+          <p class="lead my-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium enim ipsa vero ex dolor, in id aliquid Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <div class="button btn btn-primary btn-outline-light">Learn More</div>   
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Social media area -->
+  <section class="bg-primary text-light text-center text-md-start p-5">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center ">
+        <h3 class="mb-3 mb-md-0">Follow Us On Social Media</h3>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+          <button type="button" class="btn btn-outline-dark">Instagram</button>
+          <button type="button" class="btn btn-outline-dark">Facebook</button>
+          <button type="button" class="btn btn-outline-dark">Twitter</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Boxes -->
+  <section class="p-5" id="verses">
+    <div class="container">
+      <div class="row text-center mb-4">
+        <h1>Explore by Category</h1>
+        <p>Find verses by category below</p>
+      </div>
+      <div class="row g-4 mb-4">
+        <div class="col-md">
+          <div class="card bg-dark text-light v-love">
+            <div class="card-body text-start">
+              <div class="h2 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h2 class="card-title mb-3">
+                Love
+              </h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, natus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-dark text-light v-peace">
+            <div class="card-body text-start">
+              <div class="h2 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h2 class="card-title mb-3">
+                Peace
+              </h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, natus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-dark text-light v-grace">
+            <div class="card-body text-start">
+              <div class="h2 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h2 class="card-title mb-3">
+                Grace
+              </h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, natus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md">
+          <div class="card bg-dark text-light v-prom">
+            <div class="card-body text-start">
+              <div class="h2 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h2 class="card-title mb-3">
+                Promises
+              </h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, natus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-dark text-light v-heal">
+            <div class="card-body text-start">
+              <div class="h2 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h2 class="card-title mb-3">
+                Healing
+              </h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, natus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-dark text-light v-hope">
+            <div class="card-body text-start">
+              <div class="h2 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h2 class="card-title mb-3">
+                Hope
+              </h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, natus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Learn Sections -->
+  <section id="about" class="p-5">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <img src="./img/about.jpg" alt="#" class="img-fluid">
+        </div>
+        <div class="col-md p-5">
+          <h2>Our Church</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis aperiam officiis, magnam odit nisi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laboriosam, eveniet dicta, officiis pariatur odio dolorem repellendus dolorum totam quos consectetur, soluta doloremque dolore incidunt accusantium praesentium tempora! Optio?
+          </p>
+          <a href="" class="btn btn-primary mt-3"> 
+            <i class="bi bi-chevron-right"></i> Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="p-5 bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md p-5">
+          <h2>Our Services</h2>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis aperiam officiis, magnam odit nisi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laboriosam, eveniet dicta, officiis pariatur odio dolorem repellendus dolorum totam quos consectetur, soluta doloremque dolore incidunt accusantium praesentium tempora! Optio?
+          </p>
+          <a href="" class="btn btn-light mt-3"> 
+            <i class="bi bi-chevron-right"></i> Learn More
+          </a>
+        </div>
+        <div class="col-md">
+          <img src="./img/services.jpg" alt="#" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Map -->
+  <section class="p-5" id="contact">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md">
+          <h2 class="text-center mb-4">Contact Info</h2>
+          <ul class="list-group list-group-flush lead">
+            <li class="list-group-item">
+              <span class="fw-bold">Main Location:</span> 50 Main st Boston MA
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Phone:</span> (555)-555-5555
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Email:</span> example@example.com
+            </li>
+          </ul>
+        </div>
+        <div class="col-md">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; 2021 Sala Evangelica Miami</p>
+      
+      <a href="" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
