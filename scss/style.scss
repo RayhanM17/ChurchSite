@@ -9,15 +9,20 @@
 body{
   font-family: 'Montserrat';
   line-height: 1.5;
-  background:$gray;
+  background:$light;
   width: 100%;
   height: 100%;
 }
 
+// body::before {
+//   display:block;
+//   content: '';
+//   height: 126px;
+// }
+
 // Nav
 
 .navbar-nav{
-  margin:auto!important;
 }
 
 // Showcase
@@ -34,6 +39,13 @@ body{
 // Verses
 
 .box{
+}
+
+// Map
+#map {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 
