@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@600;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +8,7 @@
 body {
   font-family: 'Montserrat';
   line-height: 1.5;
-  background: #fff;
+  background: #f1f1f1;
   width: 100%;
   height: 100%;
 }
@@ -15,20 +16,301 @@ body {
 body::before {
   display: block;
   content: '';
-  height: 126px;
+  height: 106px;
 }
 
-.bg-img {
+.navbar .navbar-brand {
+  margin-top: 0.2rem;
+}
+
+.navbar .navbar-brand img {
+  height: 4rem;
+  margin-bottom: 1rem;
+}
+
+.navbar .navbar-brand h4 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar .offcanvas .navbar-nav .nav-item {
+  padding-left: 3rem;
+}
+
+.navbar .offcanvas .navbar-nav .nav-item .nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.navbar .offcanvas .navbar-nav .nav-item .btn {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding: 0.2rem 2rem;
+  background: #49326b;
+  border-radius: 0;
+  color: #fff;
+}
+
+#showcase {
   background: url(../img/demoshowcase.jpg);
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;
 }
 
-#map {
+#showcase .container {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+#showcase .container div h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 70%;
+}
+
+#showcase .container div p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+#social {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+  background: #000;
+}
+
+#social h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+#social a {
+  color: #bc9c22;
+  margin-left: 3rem;
+}
+
+#social a i {
+  font-size: 1.3rem;
+}
+
+#verses .heading {
+  margin-top: 5.5rem;
+}
+
+#verses .heading h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#verses .heading p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #8D8D8D;
+}
+
+#verses .cards {
+  margin-top: 2rem;
+}
+
+#verses .cards .card {
+  cursor: pointer;
+  border-radius: 10px;
+  border-color: #fff;
+}
+
+#verses .cards .card-body {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+#verses .cards .card-body i {
+  font-size: 2.5rem;
+  color: #49326b;
+}
+
+#verses .cards .card-body .card-title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#verses .cards .card-body .card-text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #8D8D8D;
+}
+
+#about .container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#about .container img {
+  height: 500px;
+  width: 100%;
+}
+
+#about .container .body-text {
+  margin-left: 4rem;
+}
+
+#about .container .body-text h2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+#about .container .body-text .lead {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+#about .container .body-text p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #8D8D8D;
+  margin-bottom: 4rem;
+}
+
+#about .container .body-text .btn {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding: 0.2rem 1.5rem;
+  background: #bc9c22;
+  border-radius: 0;
+  color: #fff;
+  border: #bc9c22;
+}
+
+#services {
+  background: #000;
+}
+
+#services .container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#services .container img {
+  height: 500px;
+  width: 100%;
+}
+
+#services .container .body-text {
+  margin-right: 4rem;
+}
+
+#services .container .body-text h2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+#services .container .body-text .lead {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+#services .container .body-text p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #8D8D8D;
+  margin-bottom: 4rem;
+}
+
+#services .container .body-text .btn {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding: 0.2rem 1.5rem;
+  background: #bc9c22;
+  border-radius: 0;
+  color: #fff;
+  border: #bc9c22;
+}
+
+#contact .container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#contact .container .heading h2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#contact .container .heading p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #8D8D8D;
+}
+
+#contact .container ul {
+  padding-left: 0;
+  margin-top: 4rem;
+}
+
+#contact .container ul li {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#contact .container ul li i {
+  font-size: 1.2rem;
+  color: #49326b;
+  margin-right: 1.2rem;
+}
+
+#contact .container #map {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+
+#footer {
+  background: #000;
+}
+
+#footer p {
+  margin-top: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #fff;
 }
 
 @media screen and (min-width: 1200px) {

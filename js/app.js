@@ -105,3 +105,6 @@ cards.forEach(card => {card.addEventListener('click', e => {
     showModal(verses);
   }
 })});
+
+// navbar
+
