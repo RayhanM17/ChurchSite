@@ -7,15 +7,17 @@
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css" integrity="sha384-7ynz3n3tAGNUYFZD3cWe5PDcE36xj85vyFkawcF6tIwxvIecqKvfwLiaFdizhPpN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/a2a2ab5263.js" crossorigin="anonymous"></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light px-5">
     <div class="container-xxl">
-      <a href="#showcase" class="navbar-brand">
+      <a href="#showcase" class="navbar-brand d-inline-flex align-items-center">
         <img class="img-fluid" src="./img/SEMLogo-sm.png" alt="Logo">
+        <h4>Sala Evangelica Miami</h4>
       </a>
       <!-- toggle btn mobile nav-->
       <button class="navbar-toggler" type="button"
@@ -34,7 +36,7 @@
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body justify-content-end align-center" id="main-nav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav d-inline-flex align-items-center">
             <li class="nav-item">
               <a href="#about" class="nav-link">About</a>
             </li>
@@ -42,13 +44,13 @@
               <a href="#services" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item d-md-none">
               <a href="#verses" class="nav-link">Verses</a>
             </li>
-            <li class="nav-item ms-2 d-none d-md-inline">
-              <a href="#verses" class="btn btn-secondary">Verses</a>
+            <li class="nav-item d-lg-none">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-lg-inline">
+              <a href="#contact" class="btn">Contact</a>
             </li>
           </ul>
         </div>
@@ -56,28 +58,27 @@
     </div>
   </nav>
   <!-- Showcase -->
-  <section class="showcase bg-dark text-light p-5 text-center text-md-start bg-img img-fluid" id="showcase">
-    <div class="container ">
-      <div class="d-sm-flex align-items-center justify-content-between">
+  <section class="bg-primary text-light text-center text-md-start p-5" id="showcase">
+    <div class="container">
+      <div class="d-lg-flex align-items-center justify-content-center">
         <div>
-          <h1>Welcome To <span class="text-truncate">Sala Evangelica Miami</span></h1>
+          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
           <p class="lead my-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium enim ipsa vero ex dolor, in id aliquid Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Welcome To Sala Evangelica Miami
           </p>
-          <div class="button btn btn-primary btn-outline-light">Learn More</div>   
         </div>
       </div>
     </div>
   </section>
   <!-- Social media area -->
-  <section class="bg-primary text-light text-center text-md-start p-5">
+  <section class="text-light text-center text-md-start px-5" id="social">
     <div class="container">
       <div class="d-md-flex justify-content-between align-items-center ">
         <h3 class="mb-3 mb-md-0">Follow Us On Social Media</h3>
-        <div class="btn-group" role="group" aria-label="Basic outlined example">
-          <button type="button" class="btn btn-outline-dark">Instagram</button>
-          <button type="button" class="btn btn-outline-dark">Facebook</button>
-          <button type="button" class="btn btn-outline-dark">Twitter</button>
+        <div class="row-cols-3">
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
         </div>
       </div>
     </div>
@@ -85,16 +86,16 @@
   <!-- Boxes -->
   <section class="p-5" id="verses">
     <div class="container">
-      <div class="row text-center mb-4">
+      <div class="heading row text-center mb-5">
         <h1>Explore by Category</h1>
         <p>Find verses by category below</p>
       </div>
-      <div class="row g-4 mb-4">
+      <div class="row gap-4 mb-5 cards">
         <div class="col-md">
-          <div class="card bg-dark text-light v-love">
+          <div class="card v-love">
             <div class="card-body text-start">
               <div class="h2 mb-3">
-                <i class="bi bi-laptop"></i>
+                <i class="fas fa-hand-holding-heart"></i>
               </div>
               <h2 class="card-title mb-3">
                 Love
@@ -106,10 +107,10 @@
           </div>
         </div>
         <div class="col-md">
-          <div class="card bg-dark text-light v-peace">
+          <div class="card v-peace">
             <div class="card-body text-start">
               <div class="h2 mb-3">
-                <i class="bi bi-laptop"></i>
+                <i class="fas fa-dove"></i>
               </div>
               <h2 class="card-title mb-3">
                 Peace
@@ -121,10 +122,10 @@
           </div>
         </div>
         <div class="col-md">
-          <div class="card bg-dark text-light v-grace">
+          <div class="card v-grace">
             <div class="card-body text-start">
               <div class="h2 mb-3">
-                <i class="bi bi-laptop"></i>
+                <i class="fas fa-hands"></i>
               </div>
               <h2 class="card-title mb-3">
                 Grace
@@ -136,12 +137,12 @@
           </div>
         </div>
       </div>
-      <div class="row g-4">
+      <div class="row gap-4 cards">
         <div class="col-md">
-          <div class="card bg-dark text-light v-prom">
+          <div class="card v-prom">
             <div class="card-body text-start">
               <div class="h2 mb-3">
-                <i class="bi bi-laptop"></i>
+                <i class="fas fa-bible"></i>
               </div>
               <h2 class="card-title mb-3">
                 Promises
@@ -153,10 +154,10 @@
           </div>
         </div>
         <div class="col-md">
-          <div class="card bg-dark text-light v-heal">
+          <div class="card v-heal">
             <div class="card-body text-start">
               <div class="h2 mb-3">
-                <i class="bi bi-laptop"></i>
+                <i class="fas fa-heartbeat"></i>
               </div>
               <h2 class="card-title mb-3">
                 Healing
@@ -168,10 +169,10 @@
           </div>
         </div>
         <div class="col-md">
-          <div class="card bg-dark text-light v-hope">
+          <div class="card v-hope">
             <div class="card-body text-start">
               <div class="h2 mb-3">
-                <i class="bi bi-laptop"></i>
+                <i class="fas fa-child"></i>
               </div>
               <h2 class="card-title mb-3">
                 Hope
@@ -188,29 +189,29 @@
   <!-- Learn Sections -->
   <section id="about" class="p-5">
     <div class="container">
-      <div class="row align-items-center justify-content-between">
+      <div class="row align-items-center justify-content-between gap-4">
         <div class="col-md">
           <img src="./img/about.jpg" alt="#" class="img-fluid">
         </div>
-        <div class="col-md p-5">
+        <div class="col-md body-text">
           <h2>Our Church</h2>
           <p class="lead">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis aperiam officiis, magnam odit nisi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis aperiam officiis, magnam odit nisi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi 
           </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laboriosam, eveniet dicta, officiis pariatur odio dolorem repellendus dolorum totam quos consectetur, soluta doloremque dolore incidunt accusantium praesentium tempora! Optio?
           </p>
           <a href="" class="btn btn-primary mt-3"> 
-            <i class="bi bi-chevron-right"></i> Learn More
+            Learn More
           </a>
         </div>
       </div>
     </div>
   </section>
-  <section id="services" class="p-5 bg-dark text-light">
+  <section id="services" class="p-5 text-light">
     <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md p-5">
+      <div class="row align-items-center justify-content-between gap-4">
+        <div class="col-md body-text">
           <h2>Our Services</h2>
           <p class="lead">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis aperiam officiis, magnam odit nisi.
@@ -219,7 +220,7 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laboriosam, eveniet dicta, officiis pariatur odio dolorem repellendus dolorum totam quos consectetur, soluta doloremque dolore incidunt accusantium praesentium tempora! Optio?
           </p>
           <a href="" class="btn btn-light mt-3"> 
-            <i class="bi bi-chevron-right"></i> Learn More
+           Learn More
           </a>
         </div>
         <div class="col-md">
@@ -232,18 +233,21 @@
   <!-- Contact & Map -->
   <section class="p-5" id="contact">
     <div class="container">
-      <div class="row g-4">
+      <div class="row gap-4">
         <div class="col-md">
-          <h2 class="text-center mb-4">Contact Info</h2>
-          <ul class="list-group list-group-flush lead">
-            <li class="list-group-item">
-              <span class="fw-bold">Main Location:</span> 50 Main st Boston MA
+          <div class="heading">
+            <h2 class=" mb-4">Reach Out</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, natus.</p>
+          </div>
+          <ul class="d-flex-column row-cols-1">
+            <li class="d-inline-flex align-items-center">
+              <i class="bi bi-geo-alt-fill"></i>Location: 50 Main st Boston MA
             </li>
-            <li class="list-group-item">
-              <span class="fw-bold">Phone:</span> (555)-555-5555
+            <li class="d-inline-flex align-items-center">
+              <i class="bi bi-telephone-fill"></i> Phone: (555)-555-5555
             </li>
-            <li class="list-group-item">
-              <span class="fw-bold">Email:</span> example@example.com
+            <li class="d-inline-flex align-items-center">
+              <i class="bi bi-envelope-fill"></i> Email: example@example.com
             </li>
           </ul>
         </div>
@@ -254,13 +258,9 @@
     </div>
   </section>
   <!-- Footer -->
-  <footer class="p-5 bg-dark text-white text-center position-relative">
+  <footer class="py-4 px-5 text-center" id="footer">
     <div class="container">
-      <p class="lead">Copyright &copy; 2021 Sala Evangelica Miami</p>
-      
-      <a href="" class="position-absolute bottom-0 end-0 p-5">
-        <i class="bi bi-arrow-up-circle h1"></i>
-      </a>
+      <p>Copyright &copy; 2021 Sala Evangelica Miami</p>
     </div>
   </footer>
 

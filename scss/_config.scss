@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@600;700&display=swap');
+
 $primaryColor:#49326b;
 $secondaryColor:#bc9c22;
 $light:#fff;
 $gray:#e3e6e0;
+$montFont:'Montserrat', sans-serif;
+$openFont:'Open Sans', sans-serif;
 
 $theme-colors: (
   "primary": $primaryColor,
