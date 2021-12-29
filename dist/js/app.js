@@ -22,13 +22,13 @@ function showModal(verses) {
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="versesModalLabel">${verses.heading}</h5>
+            <h2 class="modal-title" id="versesModalLabel">${verses.heading}</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="list-group">
               <div class="list-group-item">
-                <h4>${verses.verse1Name}</h4>
+                <h5>${verses.verse1Name}</h5>
                 <p>${verses.verse1Content}</p>
               </div>
             </div>
@@ -107,4 +107,14 @@ cards.forEach(card => {card.addEventListener('click', e => {
 })});
 
 // navbar
+// $("#navbarSupportedContent a:not(.dropdown-toggle)").click(function() {
+//  $("#navbarSupportedContent").collapse("hide");
+// });
 
+// var nav = document.getElementById('main-nav');
+// var versesNavLink = document.querySelector('.v-link');
+// versesNavLink.addEventListener('click', (e) => {
+//   e.stopPropagation();
+//   var bsOffCanvas = new bootstrap.Collapse(nav);
+//   bsOffCanvas.toggle('false');
+// })

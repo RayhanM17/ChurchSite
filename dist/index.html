@@ -43,8 +43,8 @@
             <li class="nav-item">
               <a href="#services" class="nav-link">Services</a>
             </li>
-            <li class="nav-item">
-              <a href="#verses" class="nav-link">Verses</a>
+            <li class="nav-item"> <!--data-bs-dismiss="offcanvas"-->
+              <a href="#verses" class="nav-link v-link">Verses</a>
             </li>
             <li class="nav-item d-lg-none">
               <a href="#contact" class="nav-link">Contact</a>
@@ -75,7 +75,7 @@
     <div class="container">
       <div class="d-md-flex justify-content-between align-items-center ">
         <h3 class="mb-3 mb-md-0">Follow Us On Social Media</h3>
-        <div class="row-cols-3">
+        <div class="row-cols-3 socials">
           <a href="#"><i class="bi bi-instagram"></i></a>
           <a href="#"><i class="bi bi-facebook"></i></a>
           <a href="#"><i class="bi bi-twitter"></i></a>
@@ -160,7 +160,7 @@
                 <i class="fas fa-heartbeat"></i>
               </div>
               <h2 class="card-title mb-3">
-                Healing
+                Heal
               </h2>
               <p class="card-text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, natus.
@@ -191,7 +191,7 @@
     <div class="container">
       <div class="row align-items-center justify-content-between gap-4">
         <div class="col-md">
-          <img src="./img/about.jpg" alt="#" class="img-fluid">
+          <div class="img"></div>
         </div>
         <div class="col-md body-text">
           <h2>Our Church</h2>
@@ -224,7 +224,7 @@
           </a>
         </div>
         <div class="col-md">
-          <img src="./img/services.jpg" alt="#" class="img-fluid">
+          <div class="img"></div>
         </div>
       </div>
     </div>
@@ -236,18 +236,20 @@
       <div class="row gap-4">
         <div class="col-md">
           <div class="heading">
-            <h2 class=" mb-4">Reach Out</h2>
+            <h2 class=" mb-4">Contact Us</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, natus.</p>
           </div>
           <ul class="d-flex-column row-cols-1">
             <li class="d-inline-flex align-items-center">
-              <i class="bi bi-geo-alt-fill"></i>Location: 50 Main st Boston MA
+              <i class="bi bi-geo-alt-fill"></i> <span>Location: 50 Main st Boston MA</span>
             </li>
             <li class="d-inline-flex align-items-center">
-              <i class="bi bi-telephone-fill"></i> Phone: (555)-555-5555
+              <i class="bi bi-telephone-fill"></i>
+              <span>Phone: (555)-555-5555</span>
             </li>
             <li class="d-inline-flex align-items-center">
-              <i class="bi bi-envelope-fill"></i> Email: example@example.com
+              <i class="bi bi-envelope-fill"></i>
+              <span>Email: example@example.com</span>
             </li>
           </ul>
         </div>

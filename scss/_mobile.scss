@@ -1,18 +1,56 @@
 // wide screens
 
 @include mediaXl{
-  .nav-mobile{
-    display: none;
-  }
+  
 }
 @include mediaLg{
-  .nav-mobile{
-    display: none;
-  }
+
 }
 @include mediaMd{
-  .nav-desk{
-    display: none;
+  #showcase{
+    .container{
+      div{
+        h1{
+          width: 100%;
+        }
+      }
+    }
+  }
+  #social{
+    .socials{
+      a{
+        &:nth-child(1){
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  #about{
+    .container{
+      .body-text{
+        margin-left: 0;
+        text-align: center;
+      }
+      .img {
+        display: none;
+      }
+    }
+  }
+  #services{
+    .container{
+      .body-text{
+        margin-left: 0;
+        text-align: center;
+      }
+      .img {
+        display: none;
+      }
+    }
+  }
+  #contact{
+    .heading{
+      text-align: center;
+    }
   }
 }
 @include mediaSm{
