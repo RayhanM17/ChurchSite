@@ -15,45 +15,40 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light px-5">
     <div class="container-xxl">
-      <a href="#showcase" class="navbar-brand d-inline-flex align-items-center">
-        <img class="img-fluid" src="./img/SEMLogo-sm.png" alt="Logo">
+      <a href="#showcase" class="navbar-brand d-sm-inline-flex d-flex-column align-items-center justify-content-sm-start justify-content-center">
+        <div class="img"></div>
         <h4>Sala Evangelica Miami</h4>
       </a>
       <!-- toggle btn mobile nav-->
-      <button class="navbar-toggler" type="button"
-      data-bs-toggle="offcanvas"
+      <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+      data-bs-toggle="collapse"
       data-bs-target="#main-nav"
       aria-controls="main-nav"
       aria-expanded="false"
       arial-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
       </button>
-
       <!-- navbar links-->
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="main-nav">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body justify-content-end align-center" id="main-nav">
-          <ul class="navbar-nav d-inline-flex align-items-center">
-            <li class="nav-item">
-              <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#services" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item"> <!--data-bs-dismiss="offcanvas"-->
-              <a href="#verses" class="nav-link v-link">Verses</a>
-            </li>
-            <li class="nav-item d-lg-none">
-              <a href="#contact" class="nav-link">Contact</a>
-            </li>
-            <li class="nav-item ms-2 d-none d-lg-inline">
-              <a href="#contact" class="btn">Contact</a>
-            </li>
-          </ul>
-        </div>
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav d-inline-flex align-items-center w-100 justify-content-end">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item ms-lg-5">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item ms-lg-5">
+            <a href="#verses" class="nav-link v-link">Verses</a>
+          </li>
+          <li class="nav-item d-lg-none">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item ms-2 d-none d-lg-inline ms-lg-5">
+            <a href="#contact" class="btn">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -240,14 +235,14 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, natus.</p>
           </div>
           <ul class="d-flex-column row-cols-1">
-            <li class="d-inline-flex align-items-center">
+            <li class="d-inline-flex align-items-center justify-content-center justify-content-md-start">
               <i class="bi bi-geo-alt-fill"></i> <span>Location: 50 Main st Boston MA</span>
             </li>
-            <li class="d-inline-flex align-items-center">
+            <li class="d-inline-flex align-items-center justify-content-center justify-content-md-start">
               <i class="bi bi-telephone-fill"></i>
               <span>Phone: (555)-555-5555</span>
             </li>
-            <li class="d-inline-flex align-items-center">
+            <li class="d-inline-flex align-items-center justify-content-center justify-content-md-start">
               <i class="bi bi-envelope-fill"></i>
               <span>Email: example@example.com</span>
             </li>

@@ -54,5 +54,163 @@
   }
 }
 @include mediaSm{
-  
+  .navbar{
+    .navbar-brand{
+      .img{
+        background-image: url(../img/SEMLogo.png);
+        width: 120px;
+        height: 60px;
+      }
+      h4{
+        display: none;
+      }
+    }
+    .toggler-icon {
+      height: 2px;
+    }
+    .collapse{
+      .navbar-nav{
+        .nav-item{
+          .nav-link{
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+    .collapsing{
+      .navbar-nav{
+        .nav-item{
+          .nav-link{
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+  }
+  #showcase{
+    .container{
+      div{
+        h1{
+          font-size: 2.4rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  #social{
+    h3{
+      font-size: 1.2rem;
+    }
+    a{
+      i{
+        font-size: 1.04rem;
+      }
+    }
+  }
+  #verses{
+    .heading{
+      .h1{
+        font-size: 1.6rem;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+    }
+    .cards{
+      .card-body{
+        i{
+          font-size: 2rem;
+        }
+        .card-title{
+          font-size: 1.6rem;
+        }
+        .card-text{
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  #about{
+    .container{
+      .body-text{
+        h2{
+          font-size: 1.6rem;
+        }
+        .lead{
+          font-size: 0.8rem;
+        }
+        p{
+          font-size: 0.8rem;
+        }
+        .btn{
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+  #services{
+    .container{
+      .body-text{
+        h2{
+          font-size: 1.6rem;
+        }
+        .lead{
+          font-size: 0.8rem;
+        }
+        p{
+          font-size: 0.8rem;
+        }
+        .btn{
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+  #contact{
+    .container{
+      .heading{
+        h2{
+          font-size: 1.6rem;
+        }
+        p{
+          font-size: 0.8rem;
+        }
+      }
+      ul{
+        li{
+          font-size: 0.8rem;
+          i{
+            font-size: 0.96rem;
+          }
+        }
+      }
+    }
+  }
+  #footer{
+    p{
+      font-size: 0.8rem;
+    }
+  }
+  .modal-content{
+    .modal-header{
+      .modal-title{
+        font-size: 1.6rem;
+      }
+    }
+    .modal-body{
+      h5{
+        font-size:1rem;
+      }
+      p{
+        font-size: 0.8rem;
+      }
+    }
+    .modal-footer{
+      button{
+        font-size: 0.7rem;
+      }
+    }
+  }
 }

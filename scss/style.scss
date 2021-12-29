@@ -1,4 +1,5 @@
 @import 'config';
+@import 'navbtn';
 
 *{
   box-sizing: border-box;
@@ -17,7 +18,7 @@ body{
 body::before {
   display:block;
   content: '';
-  height: 106px;
+  height: 95px;
 }
 
 
@@ -26,9 +27,14 @@ body::before {
 .navbar{
   .navbar-brand{
     margin-top:0.2rem;
-    img{
-      height: 4rem;
+    .img{
+      height: 50px;
+      width: 90px;
       margin-bottom: 1rem;
+      background-image: url(../img/SEMLogo-sm.png);
+      background-repeat: no-repeat, repeat;
+      background-position: center;
+      background-size: cover;
     }
     h4{
       font-family: $openFont;
@@ -38,10 +44,12 @@ body::before {
     }
   }
   //wide
-  .offcanvas{
+  
+
+  .collapse{
     .navbar-nav{
       .nav-item{
-        padding-left: 3rem;
+        //margin-left: 3rem;
         .nav-link{
           font-family: $montFont;
           font-style: normal;
@@ -64,9 +72,31 @@ body::before {
       }   
     }
   }
-  //mobile
-  .offcanvas .show{
-
+  .collapsing{
+    .navbar-nav{
+      .nav-item{
+        padding-left: 0rem;
+        .nav-link{
+          font-family: $montFont;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 0.875rem;
+          text-transform: uppercase;
+          color: #000;
+        }
+        .btn{
+          font-family: $montFont;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 0.875rem;
+          text-transform: uppercase;
+          padding: 0.2rem 2rem;
+          background:$primaryColor;
+          border-radius: 0;
+          color: #fff;
+        }
+      }   
+    }
   }
 }
 
