@@ -161,8 +161,12 @@ body::before {
   margin-bottom: 4rem;
 }
 
-#about .container img {
-  height: 500px;
+#about .container .img {
+  background-image: url(../img/about.jpg);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
   width: 100%;
 }
 
@@ -213,8 +217,12 @@ body::before {
   margin-bottom: 4rem;
 }
 
-#services .container img {
-  height: 500px;
+#services .container .img {
+  background-image: url(../img/services.jpg);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
   width: 100%;
 }
 
@@ -279,6 +287,7 @@ body::before {
 #contact .container ul {
   padding-left: 0;
   margin-top: 4rem;
+  list-style: none;
 }
 
 #contact .container ul li {
@@ -313,20 +322,61 @@ body::before {
   color: #fff;
 }
 
-@media screen and (min-width: 1200px) {
-  .nav-mobile {
-    display: none;
-  }
+.modal-content .modal-header .modal-title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .nav-mobile {
-    display: none;
-  }
+.modal-content .modal-body h5 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.modal-content .modal-body p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #8D8D8D;
+}
+
+.modal-content .modal-footer button {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding: 0.2rem 1.5rem;
+  background: #bc9c22;
+  border-radius: 0;
+  color: #fff;
+  border: #bc9c22;
 }
 
 @media screen and (max-width: 768px) {
-  .nav-desk {
+  #showcase .container div h1 {
+    width: 100%;
+  }
+  #social .socials a:nth-child(1) {
+    margin-left: 0;
+  }
+  #about .container .body-text {
+    margin-left: 0;
+    text-align: center;
+  }
+  #about .container .img {
     display: none;
+  }
+  #services .container .body-text {
+    margin-left: 0;
+    text-align: center;
+  }
+  #services .container .img {
+    display: none;
+  }
+  #contact .heading {
+    text-align: center;
   }
 }
