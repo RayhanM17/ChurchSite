@@ -253,12 +253,12 @@ body::before {
   color: #8D8D8D;
 }
 
-#about .container {
+.about .container {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-#about .container .img {
+.about .container .img {
   background-image: url(../img/about.jpg);
   background-repeat: no-repeat, repeat;
   background-position: center;
@@ -267,11 +267,11 @@ body::before {
   width: 100%;
 }
 
-#about .container .body-text {
+.about .container .body-text {
   margin-left: 4rem;
 }
 
-#about .container .body-text h2 {
+.about .container .body-text h2 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -279,12 +279,12 @@ body::before {
   margin-bottom: 4rem;
 }
 
-#about .container .body-text .lead {
+.about .container .body-text .lead {
   font-size: 1rem;
   margin-bottom: 2rem;
 }
 
-#about .container .body-text p {
+.about .container .body-text p {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -292,7 +292,7 @@ body::before {
   margin-bottom: 4rem;
 }
 
-#about .container .body-text .btn {
+.about .container .body-text .btn {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -305,16 +305,16 @@ body::before {
   border: #bc9c22;
 }
 
-#services {
+.services {
   background: #000;
 }
 
-#services .container {
+.services .container {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-#services .container .img {
+.services .container .img {
   background-image: url(../img/services.jpg);
   background-repeat: no-repeat, repeat;
   background-position: center;
@@ -323,11 +323,11 @@ body::before {
   width: 100%;
 }
 
-#services .container .body-text {
+.services .container .body-text {
   margin-right: 4rem;
 }
 
-#services .container .body-text h2 {
+.services .container .body-text h2 {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -335,12 +335,12 @@ body::before {
   margin-bottom: 4rem;
 }
 
-#services .container .body-text .lead {
+.services .container .body-text .lead {
   font-size: 1rem;
   margin-bottom: 2rem;
 }
 
-#services .container .body-text p {
+.services .container .body-text p {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -348,7 +348,7 @@ body::before {
   margin-bottom: 4rem;
 }
 
-#services .container .body-text .btn {
+.services .container .body-text .btn {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -452,6 +452,103 @@ body::before {
   border: #bc9c22;
 }
 
+#about .heading .container {
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+#about .heading .container div h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 70%;
+}
+
+#about .heading .container div p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+#about .images .row div:nth-child(1) {
+  padding-top: 4rem;
+}
+
+#about .images .row div:nth-child(1) .img {
+  background-image: url(../img/box-3.jpg);
+}
+
+#about .images .row div:nth-child(2) {
+  padding-top: 12rem;
+}
+
+#about .images .row div:nth-child(2) .img {
+  background-image: url(../img/box-1.jpg);
+}
+
+#about .images .row div:nth-child(3) {
+  padding-top: 8rem;
+}
+
+#about .images .row div:nth-child(3) .img {
+  background-image: url(../img/box-2.jpg);
+}
+
+#about .images .row div:nth-child(4) {
+  padding-top: 0;
+}
+
+#about .images .row div:nth-child(4) .img {
+  background-image: url(../img/about.jpg);
+}
+
+#about .images .row .img {
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+  height: 400px;
+  width: 100%;
+}
+
+#about .images .mobile div:nth-child(1) {
+  padding-top: 4rem;
+}
+
+#about .images .mobile div:nth-child(1) .img {
+  background-image: url(../img/box-1.jpg);
+}
+
+#about .images .mobile div:nth-child(2) {
+  padding-top: 0;
+}
+
+#about .images .mobile div:nth-child(2) .img {
+  background-image: url(../img/box-2.jpg);
+}
+
+#about .history .body-text h2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+#about .history .body-text .lead {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  width: 76%;
+}
+
+#about .history .body-text p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #8D8D8D;
+  margin-bottom: 4rem;
+  width: 76%;
+}
+
 @media screen and (max-width: 768px) {
   #showcase .container div h1 {
     width: 100%;
@@ -459,22 +556,52 @@ body::before {
   #social .socials a:nth-child(1) {
     margin-left: 0;
   }
-  #about .container .body-text {
+  .about .container .body-text {
     margin-left: 0;
     text-align: center;
   }
-  #about .container .img {
+  .about .container .img {
     display: none;
   }
-  #services .container .body-text {
+  .services .container .body-text {
     margin-left: 0;
     text-align: center;
   }
-  #services .container .img {
+  .services .container .img {
     display: none;
   }
   #contact .heading {
     text-align: center;
+  }
+  #about .heading .container div h1 {
+    width: 100%;
+  }
+  #about .images .row div:nth-child(1) {
+    padding-top: 0;
+  }
+  #about .images .row div:nth-child(4) {
+    padding-top: 0;
+  }
+  #about .images .row .img {
+    height: 200px;
+  }
+  #about .images .mobile {
+    margin-top: 1.5rem;
+  }
+  #about .images .mobile div:nth-child(1) {
+    padding-top: 0;
+  }
+  #about .images .mobile div:nth-child(2) {
+    padding-top: 0;
+  }
+  #about .history .body-text {
+    text-align: center;
+  }
+  #about .history .body-text .lead {
+    width: 100%;
+  }
+  #about .history .body-text p {
+    width: 100%;
   }
 }
 
@@ -508,7 +635,7 @@ body::before {
   #social a i {
     font-size: 1.04rem;
   }
-  #verses .heading .h1 {
+  #verses .heading h1 {
     font-size: 1.6rem;
   }
   #verses .heading p {
@@ -523,28 +650,28 @@ body::before {
   #verses .cards .card-body .card-text {
     font-size: 0.8rem;
   }
-  #about .container .body-text h2 {
+  .about .container .body-text h2 {
     font-size: 1.6rem;
   }
-  #about .container .body-text .lead {
+  .about .container .body-text .lead {
     font-size: 0.8rem;
   }
-  #about .container .body-text p {
+  .about .container .body-text p {
     font-size: 0.8rem;
   }
-  #about .container .body-text .btn {
+  .about .container .body-text .btn {
     font-size: 0.7rem;
   }
-  #services .container .body-text h2 {
+  .services .container .body-text h2 {
     font-size: 1.6rem;
   }
-  #services .container .body-text .lead {
+  .services .container .body-text .lead {
     font-size: 0.8rem;
   }
-  #services .container .body-text p {
+  .services .container .body-text p {
     font-size: 0.8rem;
   }
-  #services .container .body-text .btn {
+  .services .container .body-text .btn {
     font-size: 0.7rem;
   }
   #contact .container .heading h2 {
@@ -573,5 +700,20 @@ body::before {
   }
   .modal-content .modal-footer button {
     font-size: 0.7rem;
+  }
+  #about .heading .container div h1 {
+    font-size: 2.4rem;
+  }
+  #about .heading .container div p {
+    font-size: 1rem;
+  }
+  #about .history .body-text h2 {
+    font-size: 1.6rem;
+  }
+  #about .history .body-text .lead {
+    font-size: 0.8rem;
+  }
+  #about .history .body-text p {
+    font-size: 0.8rem;
   }
 }
