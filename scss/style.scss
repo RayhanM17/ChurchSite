@@ -488,5 +488,49 @@ body::before {
   }
 }
 
+// Services Page
+#services{
+  .video{
+    .card{
+      &:hover{
+        .play-btn{
+          i{
+            font-size: 3.4rem;
+            transition: ease-in-out 0.2s;
+            margin-right: 1.2rem;
+          }
+        }
+      }
+      .sermon-hover-video{
+        display: none;
+      }
+      .thumbnail{
+        
+      }
+      .content{
+        .badge{
+          background: $secondaryColor;
+        }
+        h2{
+          font-family: $openFont;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 2rem;
+          color: #fff;
+        }
+      }
+      
+      .play-btn{
+        top: 45%;
+        left: 48%;
+        i{
+          font-size: 3rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
 
 @import 'mobile';
