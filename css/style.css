@@ -549,6 +549,50 @@ body::before {
   width: 76%;
 }
 
+#services .video .card:hover .play-btn i {
+  font-size: 3.4rem;
+  transition: ease-in-out 0.2s;
+  margin-right: 1.2rem;
+}
+
+#services .video .card .sermon-hover-video {
+  display: none;
+}
+
+#services .video .card .content .badge {
+  background: #bc9c22;
+}
+
+#services .video .card .content h2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fff;
+}
+
+#services .video .card .play-btn {
+  top: 45%;
+  left: 48%;
+}
+
+#services .video .card .play-btn i {
+  font-size: 3rem;
+  color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  #services .card {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  #services .card {
+    width: 75%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #showcase .container div h1 {
     width: 100%;
@@ -602,6 +646,29 @@ body::before {
   }
   #about .history .body-text p {
     width: 100%;
+  }
+  #services .video .card:hover .play-btn i {
+    font-size: 2.4rem;
+    transition: ease-in-out 0.2s;
+    margin-right: 1.2rem;
+  }
+  #services .video .card .sermon-hover-video {
+    display: none;
+  }
+  #services .video .card .content h2 {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #fff;
+  }
+  #services .video .card .play-btn {
+    top: 40%;
+    left: 48%;
+  }
+  #services .video .card .play-btn i {
+    font-size: 2rem;
+    color: #fff;
   }
 }
 
@@ -715,5 +782,28 @@ body::before {
   }
   #about .history .body-text p {
     font-size: 0.8rem;
+  }
+  #services .video .card:hover .play-btn i {
+    font-size: 1.4rem;
+    transition: ease-in-out 0.2s;
+    margin-right: 1.2rem;
+  }
+  #services .video .card .sermon-hover-video {
+    display: none;
+  }
+  #services .video .card .content h2 {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #fff;
+  }
+  #services .video .card .play-btn {
+    top: 40%;
+    left: 48%;
+  }
+  #services .video .card .play-btn i {
+    font-size: 1.2rem;
+    color: #fff;
   }
 }
