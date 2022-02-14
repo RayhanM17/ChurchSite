@@ -102,10 +102,20 @@ body::before {
 
 // Showcase
 #showcase{
-  background: url(../img/demoshowcase.jpg);
+  background: url(../img/fellowsbell.jpg);
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+  }
   .container{
     margin-top: 10rem;
     margin-bottom: 10rem;
@@ -145,6 +155,7 @@ body::before {
 // Verses
 
 #verses{
+  background:#f1f1f1;
   .heading{
     margin-top: 5.5rem;
     h1{
@@ -192,6 +203,7 @@ body::before {
 
 // Services & About sections
 .about{
+  background:#f1f1f1;
   .container{
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -290,6 +302,7 @@ body::before {
 
 // contact
 #contact{
+  background:#f1f1f1;
   .container{
     margin-top: 4rem;
     margin-bottom: 4rem;

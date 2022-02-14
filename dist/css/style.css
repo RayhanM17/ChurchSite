@@ -158,10 +158,21 @@ body::before {
 }
 
 #showcase {
-  background: url(../img/demoshowcase.jpg);
+  background: url(../img/fellowsbell.jpg);
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+
+#showcase::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 #showcase .container {
@@ -199,6 +210,10 @@ body::before {
 
 #social a i {
   font-size: 1.3rem;
+}
+
+#verses {
+  background: #f1f1f1;
 }
 
 #verses .heading {
@@ -251,6 +266,10 @@ body::before {
   font-style: normal;
   font-weight: 500;
   color: #8D8D8D;
+}
+
+.about {
+  background: #f1f1f1;
 }
 
 .about .container {
@@ -359,6 +378,10 @@ body::before {
   border-radius: 0;
   color: #fff;
   border: #bc9c22;
+}
+
+#contact {
+  background: #f1f1f1;
 }
 
 #contact .container {
