@@ -65,7 +65,7 @@ cards.forEach(card => {card.addEventListener('click', e => {
 
   if(e.target.parentElement.classList.contains('v-love') || e.target.parentElement.parentElement.classList.contains('v-love') || e.target.parentElement.parentElement.parentElement.classList.contains('v-love')){
     const verses = {
-      heading: 'Verses About Love',
+      heading: 'Versos Sobre el Amor',
       verse1Name: 'Romanos 5:8',
       verse1Content: 'Mas Dios muestra su amor para con nosotros, en que siendo aún pecadores, Cristo murio por nosotros.',
       verse2Name: '1 Juan 3:18',
@@ -80,7 +80,7 @@ cards.forEach(card => {card.addEventListener('click', e => {
 
   if(e.target.parentElement.classList.contains('v-peace') || e.target.parentElement.parentElement.classList.contains('v-peace') || e.target.parentElement.parentElement.parentElement.classList.contains('v-peace')){
     const verses = {
-      heading: 'Verses About Peace',
+      heading: 'Versos Sobre La Paz',
       verse1Name: 'Salmos 4:8',
       verse1Content: 'En paz me acostaré, y asimismo dormiré; Porque solo tú, Jehová, me haces vivir confiado.',
       verse2Name: 'Juan 16:33',
@@ -95,7 +95,7 @@ cards.forEach(card => {card.addEventListener('click', e => {
 
   if(e.target.parentElement.classList.contains('v-grace') || e.target.parentElement.parentElement.classList.contains('v-grace') || e.target.parentElement.parentElement.parentElement.classList.contains('v-grace')){
     const verses = {
-      heading: 'Verses About Grace',
+      heading: 'Versículos Sobre La Gracia',
       verse1Name: 'Efesios 2:8-9',
       verse1Content: '8 Porque por gracia sois salvos por medio de la fe; y esto no de vosotros, pues es don de Dios; 9 no por obras, para que nadie se gloríe.',
       verse2Name: '1 Corintios 15:10',
@@ -110,7 +110,7 @@ cards.forEach(card => {card.addEventListener('click', e => {
 
   if(e.target.parentElement.classList.contains('v-prom') || e.target.parentElement.parentElement.classList.contains('v-prom') || e.target.parentElement.parentElement.parentElement.classList.contains('v-prom')){
     const verses = {
-      heading: 'Verses About Promises',
+      heading: 'Versículos Sobre Promesas',
       verse1Name: 'Josue 1:9',
       verse1Content: 'Mira que te mando que te esfuerces y seas valiente; no temas ni desmayes, porque Jehová tu Dios estará contigo en dondequiera que vayas.',
       verse2Name: 'Juan 10:27-29',
@@ -125,7 +125,7 @@ cards.forEach(card => {card.addEventListener('click', e => {
 
   if(e.target.parentElement.classList.contains('v-heal') || e.target.parentElement.parentElement.classList.contains('v-heal') || e.target.parentElement.parentElement.parentElement.classList.contains('v-heal')){
     const verses = {
-      heading: 'Verses About Healing',
+      heading: 'Versículos Sobre La Sanación',
       verse1Name: 'Isaiah 53:5',
       verse1Content: 'Mas él herido fue por nuestras rebeliones, molido por nuestros pecados; el castigo de nuestra paz fue sobre él, y por su llaga fuimos nosotros curados.',
       verse2Name: 'Juan 14:27',
@@ -140,7 +140,7 @@ cards.forEach(card => {card.addEventListener('click', e => {
 
   if(e.target.parentElement.classList.contains('v-hope') || e.target.parentElement.parentElement.classList.contains('v-hope') || e.target.parentElement.parentElement.parentElement.classList.contains('v-hope')){
     const verses = {
-      heading: 'Verses About Hope',
+      heading: 'Versos Sobre La Esperanza',
       verse1Name: '1 Tesalonicenses 1:3',
       verse1Content: 'acordándonos sin cesar delante del Dios y Padre nuestro de la obra de vuestra fe, del trabajo de vuestro amor y de vuestra constancia en la esperanza en nuestro Señor Jesucristo',
       verse2Name: 'Isaias 40:31',
