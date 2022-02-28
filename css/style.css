@@ -158,10 +158,21 @@ body::before {
 }
 
 #showcase {
-  background: url(../img/demoshowcase.jpg);
+  background: url(../img/outsidebell.jpeg);
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+
+#showcase::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 #showcase .container {
@@ -171,13 +182,14 @@ body::before {
 
 #showcase .container div h1 {
   font-family: "Open Sans", sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   width: 70%;
 }
 
 #showcase .container div p {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -199,6 +211,10 @@ body::before {
 
 #social a i {
   font-size: 1.3rem;
+}
+
+#verses {
+  background: #f1f1f1;
 }
 
 #verses .heading {
@@ -253,13 +269,17 @@ body::before {
   color: #8D8D8D;
 }
 
+.about {
+  background: #f1f1f1;
+}
+
 .about .container {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
 .about .container .img {
-  background-image: url(../img/about.jpg);
+  background-image: url(../img/pastorpreach.jpeg);
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;
@@ -315,7 +335,7 @@ body::before {
 }
 
 .services .container .img {
-  background-image: url(../img/services.jpg);
+  background-image: url(../img/fellowsbell.jpg);
   background-repeat: no-repeat, repeat;
   background-position: center;
   background-size: cover;
@@ -359,6 +379,10 @@ body::before {
   border-radius: 0;
   color: #fff;
   border: #bc9c22;
+}
+
+#contact {
+  background: #f1f1f1;
 }
 
 #contact .container {
@@ -474,7 +498,7 @@ body::before {
 }
 
 #about .images .row div:nth-child(1) .img {
-  background-image: url(../img/box-3.jpg);
+  background-image: url(../img/front-detailed.jpeg);
 }
 
 #about .images .row div:nth-child(2) {
@@ -482,7 +506,7 @@ body::before {
 }
 
 #about .images .row div:nth-child(2) .img {
-  background-image: url(../img/box-1.jpg);
+  background-image: url(../img/oldpastor.JPG);
 }
 
 #about .images .row div:nth-child(3) {
@@ -490,7 +514,7 @@ body::before {
 }
 
 #about .images .row div:nth-child(3) .img {
-  background-image: url(../img/box-2.jpg);
+  background-image: url(../img/outsidev2.jpeg);
 }
 
 #about .images .row div:nth-child(4) {
@@ -498,7 +522,7 @@ body::before {
 }
 
 #about .images .row div:nth-child(4) .img {
-  background-image: url(../img/about.jpg);
+  background-image: url(../img/chairs.jpeg);
 }
 
 #about .images .row .img {
@@ -579,6 +603,14 @@ body::before {
 #services .video .card .play-btn i {
   font-size: 3rem;
   color: #fff;
+}
+
+#services .table thead tr {
+  padding: 0.5rem 0.5rem;
+  background-color: #49326b;
+  color: #fff;
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 
 @media screen and (min-width: 1200px) {
