@@ -539,7 +539,7 @@ body::before {
 }
 
 #about .images .mobile div:nth-child(1) .img {
-  background-image: url(../img/box-1.jpg);
+  background-image: url(../img/outsidev2.jpeg);
 }
 
 #about .images .mobile div:nth-child(2) {
@@ -547,7 +547,7 @@ body::before {
 }
 
 #about .images .mobile div:nth-child(2) .img {
-  background-image: url(../img/box-2.jpg);
+  background-image: url(../img/oldpastor.JPG);
 }
 
 #about .history .body-text h2 {
@@ -605,7 +605,40 @@ body::before {
   color: #fff;
 }
 
-#services .table thead tr {
+#services .body-text {
+  margin-right: 4rem;
+}
+
+#services .body-text h2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+#services .body-text .lead {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+#services .body-text p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #8D8D8D;
+  margin-bottom: 4rem;
+}
+
+#services .table-section h2 {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+#services .table-section .table thead tr {
   padding: 0.5rem 0.5rem;
   background-color: #49326b;
   color: #fff;
@@ -626,7 +659,12 @@ body::before {
 }
 
 @media screen and (max-width: 768px) {
+  #showcase .container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
   #showcase .container div h1 {
+    font-size: 2rem;
     width: 100%;
   }
   #social .socials a:nth-child(1) {
@@ -695,8 +733,8 @@ body::before {
     color: #fff;
   }
   #services .video .card .play-btn {
-    top: 40%;
-    left: 48%;
+    top: 45%;
+    left: 45%;
   }
   #services .video .card .play-btn i {
     font-size: 2rem;
@@ -803,9 +841,6 @@ body::before {
   #about .heading .container div h1 {
     font-size: 2.4rem;
   }
-  #about .heading .container div p {
-    font-size: 1rem;
-  }
   #about .history .body-text h2 {
     font-size: 1.6rem;
   }
@@ -815,6 +850,9 @@ body::before {
   #about .history .body-text p {
     font-size: 0.8rem;
   }
+  #services .video .card {
+    width: 100%;
+  }
   #services .video .card:hover .play-btn i {
     font-size: 1.4rem;
     transition: ease-in-out 0.2s;
@@ -823,19 +861,37 @@ body::before {
   #services .video .card .sermon-hover-video {
     display: none;
   }
+  #services .video .card .content .badge {
+    font-size: 0.5rem;
+  }
   #services .video .card .content h2 {
     font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.75rem;
+    font-size: 1rem;
     color: #fff;
   }
   #services .video .card .play-btn {
-    top: 40%;
-    left: 48%;
+    top: 45%;
+    left: 45%;
   }
   #services .video .card .play-btn i {
     font-size: 1.2rem;
     color: #fff;
+  }
+  #services .body-text h2 {
+    font-size: 1.6rem;
+  }
+  #services .body-text .lead {
+    font-size: 0.8rem;
+  }
+  #services .body-text p {
+    font-size: 0.8rem;
+  }
+  #services .table-section h2 {
+    font-size: 1.6rem;
+  }
+  #services .table-section .table th {
+    font-size: 0.8rem;
   }
 }
