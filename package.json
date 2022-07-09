@@ -1,5 +1,5 @@
 {
-  "homepage":"https://rayhanM17.github.io/SalaEvangelicaMiami",
+  "homepage":"https://rayhanM17.github.io/ChurchSite",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
